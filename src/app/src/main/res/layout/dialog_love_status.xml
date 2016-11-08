@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:paddingLeft="@dimen/layout_medium_margin"
+    android:paddingRight="@dimen/layout_medium_margin"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroupValue"
+        android:layout_marginTop="@dimen/layout_medium_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/str_secret" />
+
+        <RadioButton
+            android:id="@+id/radio_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_single" />
+
+        <RadioButton
+            android:id="@+id/radio_in_love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_in_love" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_medium_margin"
+        android:layout_marginLeft="@dimen/layout_xsmall_margin"
+        android:layout_marginBottom="@dimen/layout_medium_margin"
+        android:text="@string/str_visiable_set"
+        android:textSize="@dimen/font_medium_size" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_medium_margin"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/str_all_know" />
+
+        <RadioButton
+            android:id="@+id/radio_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_friend_know" />
+
+        <RadioButton
+            android:id="@+id/radio_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_self_know" />
+    </RadioGroup>
+
+</LinearLayout>

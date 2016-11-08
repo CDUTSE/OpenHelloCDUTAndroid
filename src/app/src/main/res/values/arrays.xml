@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="indicator_reset_password">
+        <item>通过教务帐号</item>
+        <item>通过绑定邮箱</item>
+    </array>
+    <array name="indicator_lib">
+        <item>当前借阅</item>
+        <item>借阅历史</item>
+    </array>
+    <array name="indicator_campus_card">
+        <item>消费概览</item>
+        <item>消费记录</item>
+        <item>消费查询</item>
+    </array>
+    <array name="indicator_main">
+        <item>校园</item>
+        <item>人脉</item>
+        <item>消息</item>
+    </array>
+    <array name="indicator_function">
+        <item>课程</item>
+        <item>查询</item>
+        <item>评教</item>
+        <item>图书馆</item>
+        <item>校园卡</item>
+        <item>更多</item>
+    </array>
+    <array name="spinner_query_campus_card">
+        <item>存款信息</item>
+        <item>圈存信息</item>
+        <item>消费信息</item>
+        <item>交易统计</item>
+    </array>
+    <string-array name="str_array_gender">
+        <item>女</item>
+        <item>男</item>
+    </string-array>
+    <string-array name="str_array_love_status">
+        <item>保密</item>
+        <item>求交往</item>
+        <item>热恋</item>
+    </string-array>
+    <string-array name="str_array_sex_orientation">
+        <item>异性</item>
+        <item>同性</item>
+        <item>独终身</item>
+        <item>双性</item>
+    </string-array>
+    <string-array name="str_array_view_permission">
+        <item>所有人</item>
+        <item>仅好友</item>
+        <item>仅自己</item>
+    </string-array>
+    <string-array name="str_array_upload_avatar_method">
+        <item>拍照</item>
+        <item>相册</item>
+        <item>教务头像</item>
+    </string-array>
+
+    <string-array name="week_array">
+        <item></item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+
+    <string-array name="course_info">
+    <item>课程： %1$s</item>
+    <item>教室： %1$s</item>
+    <item>教师： %1$s</item>
+    <item>时间： %1$s</item>
+    <item>周数： %1$s</item>
+    <item>重课： %1$s</item>
+    <item>备注： %1$s</item>
+    </string-array>
+    <string-array name="building_name_array">
+        <item>第一教学楼</item>
+        <item>第二教学楼</item>
+        <item>第三教学楼</item>
+        <item>第四教学楼</item>
+        <item>第五教学楼</item>
+        <item>第六教学楼A区</item>
+        <item>第六教学楼B区</item>
+        <item>第六教学楼C区</item>
+        <item>第七教学楼</item>
+        <item>第八教学楼</item>
+        <item>第九教学楼</item>
+        <item>东区第一教学楼</item>
+        <item>东区第二教学楼</item>
+        <item>艺术中心</item>
+    </string-array>
+    <string-array name="trade_query_type">
+        <item>存款信息</item>
+        <item>圈存信息</item>
+        <item>消费信息</item>
+        <item>交易统计</item>
+    </string-array>
+</resources>

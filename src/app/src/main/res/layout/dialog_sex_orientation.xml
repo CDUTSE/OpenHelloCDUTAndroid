@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/layout_medium_margin"
+    android:paddingRight="@dimen/layout_medium_margin"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup_sex_orientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_medium_margin"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_oppositie_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/str_oppositie_sex" />
+
+        <RadioButton
+            android:id="@+id/radio_same_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_same_sex" />
+
+        <RadioButton
+            android:id="@+id/radio_keep_alone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_keep_alone" />
+
+        <RadioButton
+            android:id="@+id/radio_double_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_double_sex" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_medium_margin"
+        android:layout_marginBottom="@dimen/layout_medium_margin"
+        android:layout_marginLeft="@dimen/layout_xsmall_margin"
+        android:text="@string/str_visiable_set"
+        android:textSize="@dimen/font_medium_size" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_medium_margin"
+        android:layout_marginLeft="@dimen/layout_medium_margin"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/str_all_know" />
+
+        <RadioButton
+            android:id="@+id/radio_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_friend_know" />
+
+        <RadioButton
+            android:id="@+id/radio_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_self_know" />
+    </RadioGroup>
+
+</LinearLayout>

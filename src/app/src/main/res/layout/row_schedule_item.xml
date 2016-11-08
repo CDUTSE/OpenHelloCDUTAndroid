@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textView_row_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:textColor="@color/color_ep_white" />
+
+    <View
+        android:id="@+id/divider_row_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_divider_gray" />
+
+    <TextView
+        android:id="@+id/textView_row_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/color_ep_white" />
+
+    <View
+        android:id="@+id/divider_row_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_divider_gray" />
+
+    <TextView
+        android:id="@+id/textView_row_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/color_ep_white" />
+
+    <View
+        android:id="@+id/divider_row_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_divider_gray" />
+
+    <TextView
+        android:id="@+id/textView_row_4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/color_ep_white" />
+
+    <View
+        android:id="@+id/divider_row_4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_divider_gray" />
+
+    <TextView
+        android:id="@+id/textView_row_5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/color_ep_white" />
+
+    <View
+        android:id="@+id/divider_row_5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_divider_gray" />
+
+    <TextView
+        android:id="@+id/textView_row_6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/color_ep_white" />
+
+    <View
+        android:id="@+id/divider_row_6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_divider_gray" />
+
+    <TextView
+        android:id="@+id/textView_row_7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/color_ep_white" />
+
+    <View
+        android:id="@+id/divider_row_7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_divider_gray" />
+
+    <TextView
+        android:id="@+id/textView_row_8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/color_ep_white" />
+
+    <View
+        android:id="@+id/divider_row_8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_divider_gray" />
+
+    <TextView
+        android:id="@+id/textView_row_9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/color_ep_white" />
+
+    <View
+        android:id="@+id/divider_row_9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_divider_gray" />
+
+    <TextView
+        android:id="@+id/textView_row_10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/color_ep_white" />
+
+    <View
+        android:id="@+id/divider_row_10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_divider_gray" />
+
+    <TextView
+        android:id="@+id/textView_row_11"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/color_ep_white" />
+
+    <View
+        android:id="@+id/divider_row_11"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_divider_gray" />
+
+    <TextView
+        android:id="@+id/textView_row_12"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/color_ep_white" />
+
+    <View
+        android:id="@+id/divider_row_12"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_divider_gray" />
+
+    <TextView
+        android:id="@+id/textView_row_13"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/color_ep_white" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="layout_end_margin">100dp</dimen>
+    <dimen name="layout_small_margin">8dp</dimen>
+    <dimen name="layout_xsmall_margin">5dp</dimen>
+    <dimen name="layout_xxsmall_margin">4dp</dimen>
+    <dimen name="layout_medium_margin">13dp</dimen>
+    <dimen name="layout_large_margin">19dp</dimen>
+    <dimen name="icon_message_list_size">50dp</dimen>
+    <dimen name="icon_large_size">76dp</dimen>
+    <dimen name="icon_rec_width_size">100dp</dimen>
+    <dimen name="icon_score_size">86dp</dimen>
+    <dimen name="icon_rec_height_size">150dp</dimen>
+    <dimen name="icon_small_size">27dp</dimen>
+    <dimen name="icon_x_small_size">14dp</dimen>
+    <dimen name="font_medium_size">18sp</dimen>
+    <dimen name="font_large_size">25sp</dimen>
+    <dimen name="font_x_big_size">50sp</dimen>
+    <dimen name="font_small_size">12sp</dimen>
+    <dimen name="font_button_size">20sp</dimen>
+    <dimen name="btn_normal_height">40dp</dimen>
+    <dimen name="btn_small_height">34dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="size_avatar">50dp</dimen>
+
+    <color name="color_ep_transparent_gray">#80D9D9D9</color>
+    <color name="color_ep_gray">#EBEBEB</color>
+    <color name="color_ep_deep_gray">#D9D9D9</color>
+    <color name="color_ep_white">#FFFFFF</color>
+    <color name="color_ep_blank">#000000</color>
+    <color name="color_ep_font_gray">#AAAAAA</color>
+    <color name="color_ep_blue">#00AEEF</color>
+    <color name="color_ep_actionbar_blue">#57DBFB</color>
+    <color name="color_ep_apple_blue">#3d89ff</color>
+    <color name="color_ep_deep_blue">#5392EF</color>
+    <color name="color_ep_hover_blue">#CFE5FD</color>
+    <color name="color_ep_red">#ED5E5E</color>
+    <color name="color_ep_hover_red">#D24949</color>
+    <color name="color_ep_text_red">#EF454A</color>
+    <color name="color_ep_text_grean">#4FBF2D</color>
+    <color name="color_divider_gray">#99DFDFDF</color>
+    <color name="color_schedule_back_ground">#FFF9E0</color>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="common_radius">5dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+</resources>

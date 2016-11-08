@@ -1,0 +1,24 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_schedule_refresh"
+        android:orderInCategory="100"
+
+        android:title="@string/str_refresh_schedule"
+        />
+
+    <item
+        android:id="@+id/action_setting_schedule"
+        android:orderInCategory="100"
+        android:title="@string/str_course_setting" />
+    <item
+        android:id="@+id/action_setting_back_ground"
+        android:orderInCategory="100"
+        android:title="@string/str_set_background" />
+    <item
+        android:id="@+id/action_add_laucher"
+        android:orderInCategory="100"
+        android:title="@string/str_desk_schedule" />
+
+</menu>

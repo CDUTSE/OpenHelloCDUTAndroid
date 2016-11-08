@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.emptypointer.hellocdut">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <uses-permission android:name="com.easemob.chatuidemo.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".customer.EPApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".customer.EPUpdataBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="empty#hellocdut" />
+
+        <activity
+            android:name=".ui.basic.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.account.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.basic.SimpleBrowserActivity" />
+        <activity
+            android:name=".ui.account.ResetPwdActivity"
+            android:label="@string/title_activity_reset_pwd"
+            android:parentActivityName=".ui.account.LoginActivity" />
+        <!--
+            <activity
+            android:name=".ui.account.ResetPwdActivity"
+            android:label="@string/title_activity_reset_pwd"
+            android:parentActivityName=".ui.account.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.emptypointer.hellocdut.ui.account.LoginActivity" />
+        </activity>
+        -->
+        <activity
+            android:name=".ui.account.ProfileActivity"
+            android:label="@string/str_my_profile" />
+        <activity
+            android:name=".ui.account.UploadAvatarActivity"
+            android:label="@string/str_upload_avatar" />
+        <activity
+            android:name=".ui.basic.ModifyTextActivity"
+            android:label="@string/str_modify" />
+        <activity
+            android:name=".ui.account.RelativeAccountActivity"
+            android:label="@string/str_relative_account" />
+        <activity
+            android:name=".ui.account.BindActivity"
+            android:label="@string/str_bind" />
+        <activity
+            android:name=".ui.query.QueryListActivity"
+            android:label="@string/str_query" />
+        <activity
+            android:name=".ui.main.ScheduleActivity"
+            android:label="@string/str_course"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.query.CampusCardActivity"
+            android:label="@string/str_campus_card" />
+        <activity
+            android:name=".ui.query.LibraryActivity"
+            android:label="@string/str_lib" />
+        <activity
+            android:name=".ui.main.AddonesActivity"
+            android:label="@string/title_activity_addones" />
+        <activity
+            android:name=".ui.query.QueryTelActivity"
+            android:label="@string/str_query_tel_number" />
+        <activity
+            android:name=".ui.query.QueryTeachingPlanActivity"
+            android:label="@string/str_query_teach_plan" />
+        <activity
+            android:name=".ui.query.QueryGradeActivity"
+            android:label="@string/str_query_grade" />
+        <activity
+            android:name=".ui.query.CampusQueryResultActivity"
+            android:label="@string/str_query" />
+        <activity
+            android:name=".ui.query.QueryClassroomActivity"
+            android:label="@string/str_query_classroom_status"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.basic.SettingActivity"
+            android:label="@string/str_setting" />
+        <activity
+            android:name=".ui.basic.AboutActivity"
+            android:label="@string/str_about" />
+        <activity
+            android:name=".ui.basic.GuideActivity"
+            android:label="@string/title_activity_guide"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.account.ChangePasswordActivity"
+            android:label="@string/str_change_password" />
+        <activity android:name=".ui.main.EvaluationActivity"
+            android:label="@string/str_teaching_revaluation"
+            />
+    </application>
+
+</manifest>

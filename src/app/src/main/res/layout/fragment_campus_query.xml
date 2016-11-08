@@ -1,0 +1,146 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emptypointer.hellocdut.ui.query.CampusQueryFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_xxsmall_margin"
+        android:layout_marginLeft="@dimen/layout_small_margin"
+        android:layout_marginRight="@dimen/layout_small_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:elevation="100dp"
+        app:cardCornerRadius="@dimen/common_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/layout_medium_margin"
+            android:paddingBottom="@dimen/layout_small_margin"
+            android:paddingTop="@dimen/layout_small_margin">
+        <com.rey.material.widget.Spinner
+                android:layout_marginLeft="@dimen/layout_small_margin"
+                android:id="@+id/mSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="128dp"
+                android:padding="8dp"
+                app:spn_dividerColor="@color/colorPrimary"
+                app:spn_label="查询类型"
+                app:spn_labelTextSize="@dimen/font_small_size"
+                app:v_styleId="@array/spinner_light" />
+
+            <LinearLayout
+                android:id="@+id/layoutStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/layout_medium_margin"
+                android:paddingRight="@dimen/layout_medium_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_small_margin"
+                    android:text="开始日期"
+                    android:textSize="@dimen/font_small_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_xsmall_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvStartDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:text="2014-11-06" />
+
+                    <ImageView
+                        android:id="@+id/imStartCalender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_medium_margin"
+                        android:layout_marginTop="-5dp"
+                        android:src="@drawable/ic_calendar" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/color_half_blank"></View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/layout_medium_margin"
+                android:paddingRight="@dimen/layout_medium_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_small_margin"
+                    android:text="截止日期"
+                    android:textSize="@dimen/font_small_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_xsmall_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvEndDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:text="2014-11-06" />
+
+                    <ImageView
+                        android:id="@+id/imEndCalender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_medium_margin"
+                        android:layout_marginTop="-5dp"
+                        android:src="@drawable/ic_calendar" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/color_half_blank"></View>
+            </LinearLayout>
+
+
+            <com.rey.material.widget.Button
+                android:id="@+id/btnCommit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/str_query"
+                android:textColor="@color/color_ep_white"
+                android:textStyle="bold"
+                app:v_styleId="@array/button_raise_wave_color" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

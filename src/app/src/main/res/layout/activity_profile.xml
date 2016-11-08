@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/layout_end_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_xxsmall_margin"
+                android:layout_marginLeft="@dimen/layout_small_margin"
+                android:layout_marginRight="@dimen/layout_small_margin"
+                android:layout_marginTop="@dimen/layout_xxsmall_margin"
+                android:background="@color/color_ep_white"
+                android:elevation="100dp"
+                card_view:cardCornerRadius="@dimen/common_radius">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_avatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_white_bg"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/layout_large_margin"
+                            android:text="@string/str_avatar"
+                            android:textSize="@dimen/font_medium_size" />
+
+                        <com.emptypointer.hellocdut.widget.CircleImageView
+                            android:id="@+id/imAvatar"
+                            android:layout_width="@dimen/icon_large_size"
+                            android:layout_height="@dimen/icon_large_size"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/layout_small_margin"
+                            android:layout_marginRight="@dimen/layout_medium_margin"
+                            android:layout_marginTop="@dimen/layout_small_margin"
+                            />
+
+                    </RelativeLayout>
+                    <!-- 只是一个有边距的分割线 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_ep_white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/layout_medium_margin"
+                            android:layout_marginRight="@dimen/layout_medium_margin"
+                            android:background="@color/color_ep_gray" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_white_bg"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/layout_medium_margin"
+                            android:layout_marginLeft="@dimen/layout_large_margin"
+                            android:layout_marginTop="@dimen/layout_medium_margin"
+                            android:text="@string/str_account"
+                            android:textSize="@dimen/font_medium_size" />
+
+                        <TextView
+                            android:id="@+id/textView_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_large_margin"
+                            android:textColor="@color/color_ep_font_gray" />
+                    </RelativeLayout>
+                    <!-- 昵称 -->
+                    <!-- 只是一个有边距的分割线 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_ep_white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/layout_medium_margin"
+                            android:layout_marginRight="@dimen/layout_medium_margin"
+                            android:background="@color/color_ep_gray" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_nick_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_white_bg"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/layout_medium_margin"
+                            android:layout_marginLeft="@dimen/layout_large_margin"
+                            android:layout_marginTop="@dimen/layout_medium_margin"
+                            android:text="@string/str_nick_name"
+                            android:textSize="@dimen/font_medium_size" />
+
+                        <TextView
+                            android:id="@+id/textView_nick_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_large_margin"
+                            android:textColor="@color/color_ep_font_gray" />
+                    </RelativeLayout>
+                    <!-- 座右銘 -->
+                    <!-- 只是一个有边距的分割线 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_ep_white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/layout_medium_margin"
+                            android:layout_marginRight="@dimen/layout_medium_margin"
+                            android:background="@color/color_ep_gray" />
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/layout_motto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_white_bg"
+                        android:clickable="true">
+
+                        <TextView
+                            android:id="@+id/textView_motto_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/layout_medium_margin"
+                            android:layout_marginLeft="@dimen/layout_large_margin"
+                            android:layout_marginTop="@dimen/layout_medium_margin"
+                            android:text="@string/str_motto"
+                            android:textSize="@dimen/font_medium_size" />
+
+                        <TextView
+                            android:id="@+id/textView_motto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/layout_medium_margin"
+                            android:layout_marginRight="@dimen/layout_large_margin"
+                            android:layout_toRightOf="@id/textView_motto_hint"
+                            android:gravity="right"
+                            android:textColor="@color/color_ep_font_gray" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_xxsmall_margin"
+                android:layout_marginLeft="@dimen/layout_small_margin"
+                android:layout_marginRight="@dimen/layout_small_margin"
+                android:layout_marginTop="@dimen/layout_xxsmall_margin"
+                android:background="@color/color_ep_white"
+                android:elevation="100dp"
+                card_view:cardCornerRadius="@dimen/common_radius">
+                <!-- 恋爱状态 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_love_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_white_bg"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/layout_medium_margin"
+                            android:layout_marginLeft="@dimen/layout_large_margin"
+                            android:layout_marginTop="@dimen/layout_medium_margin"
+                            android:text="@string/str_love_status"
+                            android:textSize="@dimen/font_medium_size" />
+
+                        <TextView
+                            android:id="@+id/textView_love_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_large_margin"
+                            android:textColor="@color/color_ep_font_gray" />
+                    </RelativeLayout>
+                    <!-- 性取向 -->
+                    <!-- 只是一个有边距的分割线 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_ep_white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/layout_medium_margin"
+                            android:layout_marginRight="@dimen/layout_medium_margin"
+                            android:background="@color/color_ep_gray" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_sex_oriegin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_white_bg"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/layout_medium_margin"
+                            android:layout_marginLeft="@dimen/layout_large_margin"
+                            android:layout_marginTop="@dimen/layout_medium_margin"
+                            android:text="@string/str_sex_orientation"
+                            android:textSize="@dimen/font_medium_size" />
+
+                        <TextView
+                            android:id="@+id/textView_sex_orientation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_large_margin"
+                            android:textColor="@color/color_ep_font_gray" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_xxsmall_margin"
+                android:layout_marginLeft="@dimen/layout_small_margin"
+                android:layout_marginRight="@dimen/layout_small_margin"
+                android:layout_marginTop="@dimen/layout_xxsmall_margin"
+                android:background="@color/color_ep_white"
+                android:elevation="100dp"
+                card_view:cardCornerRadius="@dimen/common_radius">
+
+                <LinearLayout
+                    android:id="@+id/layout_certificate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <!-- 实名 -->
+
+                    <RelativeLayout
+                        android:id="@+id/layout_real_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_white_bg"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/layout_medium_margin"
+                            android:layout_marginLeft="@dimen/layout_large_margin"
+                            android:layout_marginTop="@dimen/layout_medium_margin"
+                            android:text="@string/str_real_name"
+                            android:textSize="@dimen/font_medium_size" />
+
+                        <TextView
+                            android:id="@+id/textView_real_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_large_margin"
+                            android:textColor="@color/color_ep_font_gray" />
+                    </RelativeLayout>
+
+                    <!-- 性别 -->
+                    <!-- 只是一个有边距的分割线 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_ep_white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/layout_medium_margin"
+                            android:layout_marginRight="@dimen/layout_medium_margin"
+                            android:background="@color/color_ep_gray" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_white_bg"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/layout_medium_margin"
+                            android:layout_marginLeft="@dimen/layout_large_margin"
+                            android:layout_marginTop="@dimen/layout_medium_margin"
+                            android:text="@string/str_gender"
+                            android:textSize="@dimen/font_medium_size" />
+
+                        <TextView
+                            android:id="@+id/textView_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_large_margin"
+                            android:textColor="@color/color_ep_font_gray" />
+                    </RelativeLayout>
+                    <!-- 生日 -->
+                    <!-- 只是一个有边距的分割线 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_ep_white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/layout_medium_margin"
+                            android:layout_marginRight="@dimen/layout_medium_margin"
+                            android:background="@color/color_ep_gray" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_birthdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_white_bg"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/layout_medium_margin"
+                            android:layout_marginLeft="@dimen/layout_large_margin"
+                            android:layout_marginTop="@dimen/layout_medium_margin"
+                            android:text="@string/str_birth_date"
+                            android:textSize="@dimen/font_medium_size" />
+
+                        <TextView
+                            android:id="@+id/textView_birth_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_large_margin"
+                            android:textColor="@color/color_ep_font_gray" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_ep_white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/layout_medium_margin"
+                            android:layout_marginRight="@dimen/layout_medium_margin"
+                            android:background="@color/color_ep_gray" />
+                    </LinearLayout>
+                    <!-- 学号 -->
+
+                    <RelativeLayout
+                        android:id="@+id/layout_stu_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_white_bg"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/layout_medium_margin"
+                            android:layout_marginLeft="@dimen/layout_large_margin"
+                            android:layout_marginTop="@dimen/layout_medium_margin"
+                            android:text="@string/str_student_number"
+                            android:textSize="@dimen/font_medium_size" />
+
+                        <TextView
+                            android:id="@+id/textView_student_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_large_margin"
+                            android:textColor="@color/color_ep_font_gray" />
+                    </RelativeLayout>
+
+                    <!-- 学院 -->
+                    <!-- 只是一个有边距的分割线 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_ep_white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/layout_medium_margin"
+                            android:layout_marginRight="@dimen/layout_medium_margin"
+                            android:background="@color/color_ep_gray" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_institute"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_white_bg"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/layout_medium_margin"
+                            android:layout_marginLeft="@dimen/layout_large_margin"
+                            android:layout_marginTop="@dimen/layout_medium_margin"
+                            android:text="@string/str_institute"
+                            android:textSize="@dimen/font_medium_size" />
+
+                        <TextView
+                            android:id="@+id/textView_institute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_large_margin"
+                            android:textColor="@color/color_ep_font_gray" />
+                    </RelativeLayout>
+
+                    <!-- 专业 -->
+                    <!-- 只是一个有边距的分割线 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_ep_white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/layout_medium_margin"
+                            android:layout_marginRight="@dimen/layout_medium_margin"
+                            android:background="@color/color_ep_gray" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_major"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_white_bg"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/layout_medium_margin"
+                            android:layout_marginLeft="@dimen/layout_large_margin"
+                            android:layout_marginTop="@dimen/layout_medium_margin"
+                            android:text="@string/str_major"
+                            android:textSize="@dimen/font_medium_size" />
+
+                        <TextView
+                            android:id="@+id/textView_major"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_large_margin"
+                            android:textColor="@color/color_ep_font_gray" />
+                    </RelativeLayout>
+
+                    <!-- 班级 -->
+                    <!-- 只是一个有边距的分割线 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_ep_white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/layout_medium_margin"
+                            android:layout_marginRight="@dimen/layout_medium_margin"
+                            android:background="@color/color_ep_gray" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_white_bg"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/layout_medium_margin"
+                            android:layout_marginLeft="@dimen/layout_large_margin"
+                            android:layout_marginTop="@dimen/layout_medium_margin"
+                            android:text="@string/str_class"
+                            android:textSize="@dimen/font_medium_size" />
+
+                        <TextView
+                            android:id="@+id/textView_class"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_large_margin"
+                            android:textColor="@color/color_ep_font_gray" />
+                    </RelativeLayout>
+
+                    <!-- 入学年份 -->
+                    <!-- 只是一个有边距的分割线 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_ep_white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/layout_medium_margin"
+                            android:layout_marginRight="@dimen/layout_medium_margin"
+                            android:background="@color/color_ep_gray" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_entrance_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_common_white_bg"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/layout_medium_margin"
+                            android:layout_marginLeft="@dimen/layout_large_margin"
+                            android:layout_marginTop="@dimen/layout_medium_margin"
+                            android:text="@string/str_entrance_date"
+                            android:textSize="@dimen/font_medium_size" />
+
+                        <TextView
+                            android:id="@+id/textView_entrance_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_large_margin"
+                            android:textColor="@color/color_ep_font_gray" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/layout_uncertificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layout_large_margin"
+                    android:text="尚未绑定 預留的點擊綁定可以跳轉到綁定位置"
+                    android:textColor="@color/color_ep_font_gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+

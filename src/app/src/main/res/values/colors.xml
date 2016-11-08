@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#039BE5</color>
+    <color name="colorPrimaryDark">#1E88E5</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="colorPrimaryQuarter">#331976D2</color>
+    <color name="btn_common_gray">#D6D7D7</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="color_ripple">#10000000</color>
+    <color name="colorPrimaryHalf">#9000C557</color>
+
+    <color name="progress_color_primary">@color/colorPrimary</color>
+    <color name="progress_color_red">#FFD8433C</color>
+    <color name="progress_color_yellow">#FFF2AF3A</color>
+    <color name="btn_common_blue">#FF279B5E</color>
+
+    <color name="colorControlNormal">#FF78909C</color>
+    <color name="color_half_blank">#FF737373</color>
+
+    <array name="progress_colors_light">
+        <item>@color/progress_color_primary</item>
+        <item>@color/progress_color_red</item>
+        <item>@color/progress_color_yellow</item>
+        <item>@color/btn_common_blue</item>
+    </array>
+    <color name="colorControlNormalHalf">#9078909C</color>
+    <color name="colorControlActivatedHalf">#90388E3C</color>
+    <color name="colorSwitchThumbNormal">#FF78909C</color>
+</resources>

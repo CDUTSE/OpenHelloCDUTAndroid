@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/layout_xxsmall_margin"
+    android:layout_marginLeft="@dimen/layout_small_margin"
+    android:layout_marginRight="@dimen/layout_small_margin"
+    android:layout_marginTop="@dimen/layout_xxsmall_margin"
+    android:elevation="100dp"
+    card_view:cardCornerRadius="@dimen/common_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_common_white_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_medium_margin"
+            android:layout_marginRight="@dimen/layout_medium_margin"
+            android:layout_marginTop="@dimen/layout_medium_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/font_medium_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_medium_margin"
+            android:layout_marginTop="@dimen/layout_small_margin"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:id="@+id/tvMajor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_medium_margin"
+                android:layout_weight="1"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvMaketime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_medium_margin"
+                android:layout_weight="1"
+                android:singleLine="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

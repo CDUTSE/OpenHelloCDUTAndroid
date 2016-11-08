@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/layout_medium_margin"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etPhoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_hint_phone_num"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:maxLength="11"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <ImageButton
+            android:background="@drawable/bg_selectable_item"
+            android:layout_marginLeft="@dimen/layout_medium_margin"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/imageView_open_call_log"
+            android:layout_width="@dimen/icon_small_size"
+            android:layout_height="@dimen/icon_small_size"
+            android:src="@drawable/ic_import" />
+
+    </LinearLayout>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/btnCommit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/str_query"
+        android:textColor="@color/color_ep_white"
+        android:textStyle="bold"
+        app:v_styleId="@array/button_raise_wave_color" />
+
+</LinearLayout>

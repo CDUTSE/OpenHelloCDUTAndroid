@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.emptypointer.hellocdut.ui.basic.ModifyTextActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputContent"
+            android:layout_width="match_parent"
+            app:counterEnabled="true"
+            app:counterOverflowTextAppearance="@color/color_ep_red"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_edit"
+                android:gravity="top|left"
+                android:maxLength="60"
+                android:maxLines="1"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </ScrollView>
+</LinearLayout>

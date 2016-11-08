@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mLayoutRoot"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emptypointer.hellocdut.ui.query.QueryClassroomActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_xxsmall_margin"
+                android:layout_marginLeft="@dimen/layout_small_margin"
+                android:layout_marginRight="@dimen/layout_small_margin"
+                android:layout_marginTop="@dimen/layout_xxsmall_margin"
+                android:elevation="100dp"
+                app:cardCornerRadius="@dimen/common_radius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/layout_small_margin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.rey.material.widget.Spinner
+                            android:id="@+id/mSpinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_medium_margin"
+                            android:minWidth="128dp"
+                            android:padding="8dp"
+                            app:spn_dividerColor="@color/colorPrimary"
+                            app:spn_label="教学区"
+                            app:spn_labelTextSize="@dimen/font_small_size"
+                            app:v_styleId="@array/spinner_light" />
+
+                        <LinearLayout
+                            android:id="@+id/layoutCalender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_medium_margin"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/layout_medium_margin"
+                            android:paddingRight="@dimen/layout_medium_margin">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_small_margin"
+                                android:text="日期"
+                                android:textSize="@dimen/font_small_size" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_xsmall_margin"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:text="2014-11-06" />
+
+                                <ImageView
+                                    android:id="@+id/imCalender"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/layout_medium_margin"
+                                    android:layout_marginTop="-5dp"
+                                    android:src="@drawable/ic_calendar" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/color_half_blank"></View>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <com.rey.material.widget.Button
+                        android:id="@+id/btnCommit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/str_query"
+                        android:textColor="@color/color_ep_white"
+                        android:textStyle="bold"
+                        app:v_styleId="@array/button_raise_wave_color" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </android.support.v4.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_vertical">
+
+            <TextView
+                android:id="@+id/textView_class_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.65"
+                android:background="@color/color_ep_gray"
+                android:gravity="center"
+                android:paddingBottom="@dimen/layout_medium_margin"
+                android:paddingTop="@dimen/layout_medium_margin"
+                android:singleLine="true"
+                android:text="教室" />
+
+            <TextView
+                android:id="@+id/textView_seat_num"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_ep_white"
+                android:gravity="center"
+                android:text="座位" />
+
+            <TextView
+                android:id="@+id/textView_class1_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_ep_gray"
+                android:gravity="center"
+                android:text="1-2节" />
+
+            <TextView
+                android:id="@+id/textView_class3_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_ep_white"
+                android:gravity="center"
+                android:text="2-4节" />
+
+            <TextView
+                android:id="@+id/textView_class5_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_ep_gray"
+                android:gravity="center"
+                android:text="5-6节" />
+
+            <TextView
+                android:id="@+id/textView_class7_8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_ep_white"
+                android:gravity="center"
+                android:text="7-8节" />
+
+            <TextView
+                android:id="@+id/textView_class9_11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_ep_gray"
+                android:gravity="center"
+                android:text="9-11节" />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_arrow_up_bold" />
+</android.support.design.widget.CoordinatorLayout>

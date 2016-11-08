@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_schedule_back_ground">
+
+    <RelativeLayout
+        android:id="@+id/layout_course_detail_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:background="@color/color_ep_white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/layout_medium_margin"
+            android:layout_marginRight="@dimen/layout_medium_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_medium_margin"
+                android:textColor="@color/color_ep_white"
+                android:textSize="@dimen/font_medium_size" />
+
+            <TextView
+                android:id="@+id/textView_classroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_medium_margin"
+                android:textColor="@color/color_ep_white"
+                android:textSize="@dimen/font_medium_size" />
+
+            <TextView
+                android:id="@+id/textView_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_medium_margin"
+                android:textColor="@color/color_ep_white"
+                android:textSize="@dimen/font_medium_size" />
+
+            <TextView
+                android:id="@+id/textView_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_medium_margin"
+                android:textColor="@color/color_ep_white"
+                android:textSize="@dimen/font_medium_size" />
+
+            <TextView
+                android:id="@+id/textView_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_medium_margin"
+                android:textColor="@color/color_ep_white"
+                android:textSize="@dimen/font_medium_size" />
+
+            <TextView
+                android:layout_marginBottom="@dimen/layout_medium_margin"
+                android:id="@+id/textView_overlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_medium_margin"
+                android:textColor="@color/color_ep_white"
+                android:textSize="@dimen/font_medium_size" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

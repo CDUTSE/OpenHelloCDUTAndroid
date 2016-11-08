@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layout_medium_margin"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="淡雅黄"
+            android:textSize="@dimen/font_medium_size" />
+
+        <RadioButton
+            android:id="@+id/radio_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_small_margin"
+            android:checked="true"
+            android:text="清新绿"
+            android:textSize="@dimen/font_medium_size" />
+
+        <RadioButton
+            android:id="@+id/radio_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_small_margin"
+            android:text="酷炫灰"
+            android:textSize="@dimen/font_medium_size" />
+
+        <RadioButton
+            android:id="@+id/radio_pink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_small_margin"
+            android:text="可爱粉"
+            android:textSize="@dimen/font_medium_size" />
+
+        <RadioButton
+            android:id="@+id/radio_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_small_margin"
+            android:text="天际蓝"
+            android:textSize="@dimen/font_medium_size" />
+
+        <RadioButton
+            android:id="@+id/radio_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_small_margin"
+            android:text="云朵白"
+            android:textSize="@dimen/font_medium_size" />
+
+        <RadioButton
+            android:id="@+id/radio_from_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_small_margin"
+            android:text="从相册中选取一张照片"
+            android:textSize="@dimen/font_medium_size" />
+    </RadioGroup>
+
+</LinearLayout>

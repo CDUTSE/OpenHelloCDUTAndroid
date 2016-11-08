@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:name=""
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/navRelativeAcount"
+            android:icon="@drawable/ic_relative_account"
+            android:title="关联帐号" />
+        <item
+            android:id="@+id/navSetting"
+            android:icon="@drawable/ic_setting"
+            android:title="设置" />
+    </group>
+    <group
+        android:name=""
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/navLogout"
+            android:icon="@drawable/ic_logout"
+            android:title="注销登录" />
+    </group>
+
+</menu>

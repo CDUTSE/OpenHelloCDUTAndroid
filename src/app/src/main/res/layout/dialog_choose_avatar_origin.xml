@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_common_white_bg"
+        android:text="@string/str_take_photo"
+        android:textColor="@color/color_ep_blank" />
+
+    <include layout="@layout/view_underline_with_margin" />
+
+    <Button
+        android:id="@+id/button_from_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_common_white_bg"
+        android:text="@string/str_gallery"
+        android:textColor="@color/color_ep_blank" />
+
+    <include layout="@layout/view_underline_with_margin" />
+
+    <Button
+        android:id="@+id/button_from_aao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_common_white_bg"
+        android:text="@string/str_aao"
+        android:textColor="@color/color_ep_blank" />
+
+    <include layout="@layout/view_underline_with_margin" />
+
+    <Button
+        android:id="@+id/button_return"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_common_white_bg"
+        android:text="@string/str_return"
+        android:textColor="@color/color_ep_blank" />
+
+</LinearLayout>

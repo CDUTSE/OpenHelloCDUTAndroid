@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="clip_vertical">
+
+        <TextView
+            android:id="@+id/textView_class_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.65"
+            android:gravity="center"
+            android:paddingBottom="@dimen/layout_medium_margin"
+            android:paddingTop="@dimen/layout_medium_margin"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/textView_seat_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textView_class1_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/color_ep_white" />
+
+        <TextView
+            android:id="@+id/textView_class3_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/color_ep_white" />
+
+        <TextView
+            android:id="@+id/textView_class5_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/color_ep_white" />
+
+        <TextView
+            android:id="@+id/textView_class7_8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/color_ep_white" />
+
+        <TextView
+            android:id="@+id/textView_class9_11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/color_ep_white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layout_medium_margin"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="显示中午课程" />
+
+        <RadioButton
+            android:id="@+id/radio_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_medium_margin"
+            android:text="隐藏中午课程" />
+    </RadioGroup>
+
+</RelativeLayout>

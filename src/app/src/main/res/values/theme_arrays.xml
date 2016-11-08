@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="button_raise_wave_color">
+        <item>@style/BasicRaiseWaveColorButtonRippleStyle</item>
+    </array>
+    <array name="button_red_raise_wave_color">
+        <item>@style/BasicRaiseWaveRedColorButtonRippleStyle</item>
+    </array>
+
+    <array name="button_raise_wave">
+        <item>@style/BasicRaiseWaveButtonRippleStyle</item>
+    </array>
+
+    <array name="pv_circular_colors">
+        <item>@style/BasicColorCircularProgressView</item>
+    </array>
+    <array name="radio_button" >
+        <item>@style/BasicRadioButtonDrawable</item>
+    </array>
+    <array name="spinner">
+        <item>@style/BasicSpinner</item>
+    </array>
+    <array name="spinner_light">
+        <item>@style/BasicSpinner.Light</item>
+    </array>
+    <array name="spinner_item_light">
+        <item>@style/BasicSpinnerItem.Light</item>
+    </array>
+    <array name="spinner_item">
+        <item>@style/BasicSpinnerItem</item>
+    </array>
+    <array name="button_flat_color">
+        <item>@style/BasicColorButtonRippleStyle</item>
+    </array>
+    <array name="switches">
+        <item>@style/BasicSwitch</item>
+    </array>
+</resources>

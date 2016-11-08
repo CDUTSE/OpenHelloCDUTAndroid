@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_stu_id"
+            android:inputType="textEmailAddress"
+            android:maxLength="60"
+            android:maxLines="1"
+            android:nextFocusForward="@+id/etPassword"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/str_commit"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/imVisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:background="@drawable/bg_selectable_item"
+            android:src="@drawable/ic_eye_off" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_medium_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etCaptcha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeActionId="@+id/login"
+                android:imeOptions="actionUnspecified"
+                android:maxLength="4"
+                android:ems="4"
+                android:maxLines="1"
+                android:hint="@string/str_captcha"
+                android:inputType="phone"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView_captcha"
+            android:layout_width="@dimen/icon_large_size"
+            android:layout_marginLeft="@dimen/layout_medium_margin"
+            android:layout_height="@dimen/size_avatar"
+            android:layout_gravity="center_vertical"
+            android:src="@color/color_ep_white" />
+
+
+        <ImageButton
+            android:id="@+id/button_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_small_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_refresh"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_selectable_item" />
+    </LinearLayout>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/btnCommit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/str_comfirm_bind"
+        android:textColor="@color/color_ep_white"
+        android:textStyle="bold"
+        app:v_styleId="@array/button_raise_wave_color" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+apply plugin: 'bugly'   //添加Bugly符号表插件
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.emptypointer.hellocdut"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 2016041503
+        versionName "1.6.6"
+    }
+    buildTypes {
+        release {
+            buildConfigField "boolean", "LEO_DEBUG", "false"
+            minifyEnabled true
+            shrinkResources false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            buildConfigField "boolean", "LEO_DEBUG", "true"
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+bugly {
+    appId = '900008333'    //注册时分配的App ID
+    appKey = '4XTJ4XDJHK2FXInM'  //注册时分配的App Key
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    //其中latest.release为当前最新的Bugly SDK版本号
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:support-v4:23.1.0'
+    compile 'com.android.support:design:23.1.0'
+    compile 'com.github.rey5137:material:1.2.2'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.parse.bolts:bolts-android:1.2.0'
+    compile 'com.alibaba:fastjson:1.1.46.android'
+    compile 'com.qiniu:qiniu-android-sdk:7.0.9'
+    compile 'com.android.support:cardview-v7:23.1.0'
+    compile 'com.mcxiaoke.next:recycler:1.+'
+    compile 'com.tencent.bugly:crashreport:1.2.3.8'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.karumi:dexter:2.2.2'
+}

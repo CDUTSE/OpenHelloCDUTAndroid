@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_ep_gray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_bind_aao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_small_margin"
+        android:layout_marginRight="@dimen/layout_small_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/selector_common_white_bg"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/icon_large_size"
+            android:layout_height="@dimen/icon_large_size"
+            android:layout_margin="@dimen/layout_medium_margin"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_bind_stu_num" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_stu_id"
+                    android:textSize="@dimen/font_medium_size" />
+
+                <TextView
+                    android:id="@+id/textView_bind_hint_stu_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_small_margin"
+                    android:background="@drawable/bg_green_btn_with_radius"
+                    android:padding="@dimen/layout_xsmall_margin"
+                    android:text="@string/str_had_bound"
+                    android:textColor="@color/color_ep_white"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_stu_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_xsmall_margin"
+                android:textColor="@color/color_ep_font_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical">
+
+            <com.rey.material.widget.Button
+                android:id="@+id/button_unbind_aao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_medium_margin"
+                app:v_styleId="@array/button_red_raise_wave_color"
+                android:paddingLeft="@dimen/layout_small_margin"
+                android:paddingRight="@dimen/layout_small_margin"
+                android:text="@string/str_cancel_bind"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bind_campus_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_small_margin"
+        android:layout_marginRight="@dimen/layout_small_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/selector_common_white_bg"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/icon_large_size"
+            android:layout_height="@dimen/icon_large_size"
+            android:layout_margin="@dimen/layout_medium_margin"
+            android:src="@drawable/ic_bind_campus_card" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_campus_card"
+                    android:textSize="@dimen/font_medium_size" />
+
+                <TextView
+                    android:id="@+id/textView_bind_hint_campus_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_small_margin"
+                    android:background="@drawable/bg_green_btn_with_radius"
+                    android:padding="@dimen/layout_xsmall_margin"
+                    android:text="@string/str_had_bound"
+                    android:textColor="@color/color_ep_white"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_campus_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_xsmall_margin"
+                android:textColor="@color/color_ep_font_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical">
+
+            <com.rey.material.widget.Button
+                android:id="@+id/button_unbind_campus_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_medium_margin"
+                app:v_styleId="@array/button_red_raise_wave_color"
+                android:paddingLeft="@dimen/layout_small_margin"
+                android:paddingRight="@dimen/layout_small_margin"
+                android:text="@string/str_cancel_bind"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bind_lib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_small_margin"
+        android:layout_marginRight="@dimen/layout_small_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/selector_common_white_bg"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/icon_large_size"
+            android:layout_height="@dimen/icon_large_size"
+            android:layout_margin="@dimen/layout_medium_margin"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_bind_library" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_lib_card"
+                    android:textSize="@dimen/font_medium_size" />
+
+                <TextView
+                    android:id="@+id/textView_bind_hint_lib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_small_margin"
+                    android:background="@drawable/bg_green_btn_with_radius"
+                    android:padding="@dimen/layout_xsmall_margin"
+                    android:text="@string/str_had_bound"
+                    android:textColor="@color/color_ep_white"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_lib_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_xsmall_margin"
+                android:textColor="@color/color_ep_font_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical">
+
+            <com.rey.material.widget.Button
+                android:id="@+id/button_unbind_lib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_medium_margin"
+                app:v_styleId="@array/button_red_raise_wave_color"
+                android:paddingLeft="@dimen/layout_small_margin"
+                android:paddingRight="@dimen/layout_small_margin"
+                android:text="@string/str_cancel_bind"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bind_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_small_margin"
+        android:layout_marginRight="@dimen/layout_small_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/selector_common_white_bg"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/icon_large_size"
+            android:layout_height="@dimen/icon_large_size"
+            android:layout_margin="@dimen/layout_medium_margin"
+            android:src="@drawable/ic_mail" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_mail"
+                    android:textSize="@dimen/font_medium_size" />
+
+                <TextView
+                    android:id="@+id/textView_bind_hint_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_small_margin"
+                    android:background="@drawable/bg_green_btn_with_radius"
+                    android:padding="@dimen/layout_xsmall_margin"
+                    android:text="@string/str_had_bound"
+                    android:textColor="@color/color_ep_white"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_mail_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_xsmall_margin"
+                android:textColor="@color/color_ep_font_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical">
+
+            <com.rey.material.widget.Button
+                android:id="@+id/button_unbind_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_medium_margin"
+                app:v_styleId="@array/button_red_raise_wave_color"
+                android:paddingLeft="@dimen/layout_small_margin"
+                android:paddingRight="@dimen/layout_small_margin"
+                android:text="@string/str_cancel_bind"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
